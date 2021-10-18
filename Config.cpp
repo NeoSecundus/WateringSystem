@@ -3,8 +3,8 @@
 
 #ifndef SSID
     // WiFi Settings
-    #define SSID "T-Mobile-NT"
-    #define WPASS "Looserking"
+    #define SSID "WLAN-SSID"
+    #define WPASS "PASS"
     
     // WaterSystem Settings
     #define UNITID 1
@@ -18,13 +18,13 @@
     
     // SERVER & IP Settings
     #define PORT 12121
-    #define WPNAME String("Herbs")
+    #define WPNAME String("Plants")
     #define MAIN_DELAY 250 // In Milliseconds
 
     const IPAddress ipaddr(192, 168, 1, 200 + UNITID);
-    const IPAddress gateway(192, 168, 1, 1);
+    const IPAddress gateway(192, 168, 0, 1);
     const IPAddress subnet(255, 255, 255, 0);
-    const IPAddress dns(192, 168, 1, 1);
+    const IPAddress dns(192, 168, 0, 1);
     const IPAddress dns2(8, 8, 8, 8);
     const IPAddress masterServerIP(192, 168, 1, 10);
 
